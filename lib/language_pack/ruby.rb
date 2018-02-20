@@ -848,7 +848,7 @@ params = CGI.parse(uri.query || "")
   end
 
   def add_yarn_binary
-    true # Canvas requires Yarn
+    [@yarn_installer.name] # Canvas requires Yarn
     # bundler.has_gem?('webpacker') && yarn_not_preinstalled? ? [@yarn_installer.name] : []
   end
 
